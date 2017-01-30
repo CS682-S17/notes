@@ -11,6 +11,9 @@ Why study computer networking in a distributed systems class?
 
 The Internet is a "network of networks". It is a hierarchical system that must take messages and route them from one host to another. 
 
+![https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/IP_stack_connections.svg/490px-IP_stack_connections.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/IP_stack_connections.svg/490px-IP_stack_connections.svg.png)
+> https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/IP_stack_connections.svg/490px-IP_stack_connections.svg.png
+
 Inside of the Internet are a series of routers and switches that forward messages in a best-effort manner. The core of the Internet makes no guarantees about whether a message will actually arrive at its destination. The Internet also uses packet switching. Each packet sent into the network is routed independently, so messages sent from one host to another can arrive out of order.
 
 # Layered Model
@@ -23,9 +26,6 @@ If you’ve previously taken a networking class you may have studied the OSI (Op
 > http://www.tech-faq.com/wp-content/uploads/2009/01/osimodel.png
 
 Like with object-oriented code design, or the service oriented architecture model, a layered protocol design provides a modular way to describe the functions required of a network and how each layer will communicate, and then allows different implementations of each layer. A new transport protocol could be deployed in the network stack without affecting the routing protocol used, for example. 
-
-![https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/IP_stack_connections.svg/490px-IP_stack_connections.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/IP_stack_connections.svg/490px-IP_stack_connections.svg.png)
-> https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/IP_stack_connections.svg/490px-IP_stack_connections.svg.png
 
 The Internet protocol stack, on the other hand, essentially folds the functionality of the Presentation and Session layers into the Application.
 
